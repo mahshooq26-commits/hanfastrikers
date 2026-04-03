@@ -78,4 +78,14 @@
   .glow-gold {
     box-shadow: 0 0 30px hsl(45 90% 55% / 0.2), 0 0 60px hsl(45 90% 55% / 0.1);
   }
+  .glassmorphism {
+    background: rgba(15, 23, 36, 0.4);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+  .perspective-1000 {
+    perspective: 1000px;
+    transform-style: preserve-3d;
+  }
 }

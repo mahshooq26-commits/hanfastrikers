@@ -26,22 +26,27 @@ const players = [
 
 const PlayersSection = () => {
   return (
-    <section id="players" className="py-20 md:py-32 px-4">
-      <div className="max-w-7xl mx-auto">
+    <section id="players" className="py-24 md:py-32 px-4 relative overflow-hidden bg-background">
+      {/* Decorative blurry background element */}
+      <div className="absolute top-1/4 -left-1/4 w-[50vh] h-[50vh] rounded-full bg-gold/10 blur-[120px] pointer-events-none" />
+      <div className="absolute bottom-1/4 -right-1/4 w-[50vh] h-[50vh] rounded-full bg-primary/10 blur-[100px] pointer-events-none" />
+
+      <div className="max-w-[1400px] mx-auto relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="text-center mb-20"
         >
-          <p className="font-heading text-primary tracking-[0.3em] text-sm mb-3">THE SQUAD</p>
-          <h2 className="font-heading text-5xl md:text-7xl font-bold text-gold-gradient">
-            OUR PLAYERS
+          <p className="font-heading text-primary tracking-[0.3em] text-sm md:text-base mb-4 font-bold">THE SQUAD</p>
+          <h2 className="font-heading text-5xl md:text-7xl font-extrabold text-white drop-shadow-lg mb-6">
+            OUR MERCILESS <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold to-yellow-500">PLAYERS</span>
           </h2>
-          <div className="w-24 h-1 bg-primary mx-auto mt-6" />
+          <div className="w-32 h-1.5 bg-gradient-to-r from-gold to-yellow-500 mx-auto rounded-full" />
         </motion.div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8 lg:gap-10">
           {players.map((player, i) => (
             <PlayerCard
               key={player.name}
