@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import PlayerCard from "./PlayerCard";
+import sharathImg from "@/assets/player-sharath.jpeg";
 
 const players = [
   { name: "Sharath Narladka", role: "Icon Player", badge: "ICON" },
