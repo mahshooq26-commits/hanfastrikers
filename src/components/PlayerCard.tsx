@@ -5,10 +5,11 @@ interface PlayerCardProps {
   name: string;
   role: string;
   badge?: string;
+  image?: string;
   index: number;
 }
 
-const PlayerCard = ({ name, role, badge, index }: PlayerCardProps) => {
+const PlayerCard = ({ name, role, badge, image, index }: PlayerCardProps) => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 40 }}
@@ -26,9 +27,13 @@ const PlayerCard = ({ name, role, badge, index }: PlayerCardProps) => {
       )}
 
       <div className="aspect-[3/4] bg-muted flex items-center justify-center relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-t from-card via-transparent to-transparent opacity-60" />
-        <User className="w-20 h-20 text-muted-foreground/30" />
-        <div className="absolute bottom-0 left-0 right-0 h-1 bg-primary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500" />
+        <div className="absolute inset-0 bg-gradient-to-t from-card via-transparent to-transparent opacity-60 z-[1]" />
+        {image ? (
+          <img src={image} alt={name} className="absolute inset-0 w-full h-full object-cover object-top" />
+        ) : (
+          <User className="w-20 h-20 text-muted-foreground/30" />
+        )}
+        <div className="absolute bottom-0 left-0 right-0 h-1 bg-primary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 z-[2]" />
       </div>
 
       <div className="p-5 text-center">
