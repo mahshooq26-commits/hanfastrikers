@@ -13,7 +13,24 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        heading: ['Oswald', 'sans-serif'],
+        body: ['Roboto', 'sans-serif'],
+      },
       colors: {
+        gold: {
+          DEFAULT: "hsl(45 90% 55%)",
+          light: "hsl(38 95% 65%)",
+          dark: "hsl(45 85% 40%)",
+        },
+        navy: {
+          DEFAULT: "hsl(220 30% 8%)",
+          light: "hsl(220 25% 14%)",
+        },
+        cricket: {
+          green: "hsl(150 40% 25%)",
+          pitch: "hsl(120 50% 35%)",
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
