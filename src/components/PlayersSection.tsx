@@ -39,6 +39,7 @@ const PlayersSection = () => {
               name={player.name}
               role={player.role}
               badge={player.badge}
+              image={player.image}
               index={i}
             />
           ))}
