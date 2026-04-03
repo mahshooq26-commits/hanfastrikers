@@ -9,7 +9,7 @@ interface PlayerCardProps {
   index: number;
 }
 
-const PlayerCard = ({ name, role, badge, index }: PlayerCardProps) => {
+const PlayerCard = ({ name, role, badge, image, index }: PlayerCardProps) => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 40 }}
