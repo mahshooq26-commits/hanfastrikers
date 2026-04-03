@@ -4,6 +4,7 @@ import sharathImg from "@/assets/player-sharath.jpeg";
 import junaidImg from "@/assets/player-junaid.jpeg";
 import chakiImg from "@/assets/player-chaki.jpeg";
 import durgaImg from "@/assets/player-durga.jpeg";
+import balaImg from "@/assets/player-bala.jpeg";
 
 const players = [
   { name: "Sharath Narladka", role: "Icon Player", badge: "ICON", image: sharathImg },
@@ -12,7 +13,7 @@ const players = [
   { name: "Durga Adkar", role: "All-Rounder", image: durgaImg },
   { name: "Macchu Kadikadka", role: "Batsman" },
   { name: "Husain Sunnamoole", role: "Batsman" },
-  { name: "Bala Jalsoor", role: "All-Rounder" },
+  { name: "Bala Jalsoor", role: "All-Rounder", image: balaImg },
   { name: "Assa", role: "Batsman" },
   { name: "Kishor", role: "Batsman" },
   { name: "Sharath", role: "All-Rounder" },
