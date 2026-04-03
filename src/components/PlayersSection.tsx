@@ -6,17 +6,21 @@ import chakiImg from "@/assets/player-chaki.jpeg";
 import durgaImg from "@/assets/player-durga.jpeg";
 import balaImg from "@/assets/player-bala.jpeg";
 import sharath2Img from "@/assets/player-sharath2.jpeg";
+import macchuImg from "@/assets/player-macchu.jpg";
+import husainImg from "@/assets/player-husain.jpg";
+import assaImg from "@/assets/player-assa.jpg";
+import kishorImg from "@/assets/player-kishor.jpg";
 
 const players = [
   { name: "Sharath Narladka", role: "Icon Player", badge: "ICON", image: sharathImg },
   { name: "Junaid Adkar", role: "Captain", badge: "CAPTAIN", image: junaidImg },
   { name: "Chaki Kanchilpady", role: "All-Rounder", image: chakiImg },
   { name: "Durga Adkar", role: "All-Rounder", image: durgaImg },
-  { name: "Macchu Kadikadka", role: "Batsman" },
-  { name: "Husain Sunnamoole", role: "Batsman" },
+  { name: "Macchu Kadikadka", role: "Batsman", image: macchuImg },
+  { name: "Husain Sunnamoole", role: "Batsman", image: husainImg },
   { name: "Bala Jalsoor", role: "All-Rounder", image: balaImg },
-  { name: "Assa", role: "Batsman" },
-  { name: "Kishor", role: "Batsman" },
+  { name: "Assa", role: "Batsman", image: assaImg },
+  { name: "Kishor", role: "Batsman", image: kishorImg },
   { name: "Sharath", role: "All-Rounder", image: sharath2Img },
 ];
 
