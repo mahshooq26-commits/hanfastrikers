@@ -5,6 +5,7 @@ import junaidImg from "@/assets/player-junaid.jpeg";
 import chakiImg from "@/assets/player-chaki.jpeg";
 import durgaImg from "@/assets/player-durga.jpeg";
 import balaImg from "@/assets/player-bala.jpeg";
+import sharath2Img from "@/assets/player-sharath2.jpeg";
 
 const players = [
   { name: "Sharath Narladka", role: "Icon Player", badge: "ICON", image: sharathImg },
@@ -16,7 +17,7 @@ const players = [
   { name: "Bala Jalsoor", role: "All-Rounder", image: balaImg },
   { name: "Assa", role: "Batsman" },
   { name: "Kishor", role: "Batsman" },
-  { name: "Sharath", role: "All-Rounder" },
+  { name: "Sharath", role: "All-Rounder", image: sharath2Img },
 ];
 
 const PlayersSection = () => {
