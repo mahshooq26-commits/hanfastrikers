@@ -5,6 +5,7 @@ interface PlayerCardProps {
   name: string;
   role: string;
   badge?: string;
+  image?: string;
   index: number;
 }
 
