@@ -2,11 +2,12 @@ import { motion } from "framer-motion";
 import PlayerCard from "./PlayerCard";
 import sharathImg from "@/assets/player-sharath.jpeg";
 import junaidImg from "@/assets/player-junaid.jpeg";
+import chakiImg from "@/assets/player-chaki.jpeg";
 
 const players = [
   { name: "Sharath Narladka", role: "Icon Player", badge: "ICON", image: sharathImg },
   { name: "Junaid Adkar", role: "Captain", badge: "CAPTAIN", image: junaidImg },
-  { name: "Chaki Kanchilpady", role: "All-Rounder" },
+  { name: "Chaki Kanchilpady", role: "All-Rounder", image: chakiImg },
   { name: "Durga Adkar", role: "All-Rounder" },
   { name: "Macchu Kadikadka", role: "Batsman" },
   { name: "Husain Sunnamoole", role: "Batsman" },
