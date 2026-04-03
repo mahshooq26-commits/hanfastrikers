@@ -3,7 +3,7 @@ import PlayerCard from "./PlayerCard";
 import sharathImg from "@/assets/player-sharath.jpeg";
 
 const players = [
-  { name: "Sharath Narladka", role: "Icon Player", badge: "ICON" },
+  { name: "Sharath Narladka", role: "Icon Player", badge: "ICON", image: sharathImg },
   { name: "Junaid Adkar", role: "Captain", badge: "CAPTAIN" },
   { name: "Chaki Kanchilpady", role: "All-Rounder" },
   { name: "Durga Adkar", role: "All-Rounder" },
